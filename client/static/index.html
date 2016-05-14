@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="https://use.fontawesome.com/9305d8e761.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Text+Me+One|Palanquin' rel='stylesheet' type='text/css'>
 	<style>
 		#slides_control > div{
 		height: 200px;
@@ -20,6 +21,9 @@
 		left:50%;
 		top:100px;
 		margin-left:-200px;
+		}
+		body{
+			font-family: "Palanquin";
 		}
 		.main{
 			margin-top: 10px;
@@ -44,10 +48,16 @@
 			height: 10px;
 		}
 		.border{
-			border: 2px solid #fc8e20;
+			border: 2px solid #fff8e1;
 		}
 		.about{
 			border-radius: 8px;
+		}
+		.whiteout{
+			background-color: #fff;
+		}
+		.focus{
+			background-color: #fff8e1;
 		}
 		.skill:hover{
 			-moz-transform: translate(0,-1em) rotate(17deg);
@@ -188,7 +198,7 @@
 	</script>
 	<script>
 		function highLight(x) {
-			x.style.backgroundColor = "#fc8e20";
+			x.style.backgroundColor = "#ee6e73";
 			x.style.borderBottomLeftRadius = "2px";
 			x.style.borderBottomRightRadius = "2px";
 			x.style.borderTopLeftRadius = "2px";
@@ -218,7 +228,7 @@
 		}
 
 		function lightOrange(x) {
-			x.style.border = "2px solid #fbc743";
+			x.style.border = "2px solid #b0bec5";
 			x.style.borderBottomLeftRadius = "8px";
 			x.style.borderBottomRightRadius = "8px";
 			x.style.borderTopLeftRadius = "8px";
@@ -226,7 +236,7 @@
 		}
 
 		function backToOrange(x) {
-			x.style.border = "2px solid #fc8e20";
+			x.style.border = "2px solid #fff8e1";
 			x.style.borderBottomLeftRadius = "4px";
 			x.style.borderBottomRightRadius = "4px";
 			x.style.borderTopLeftRadius = "4px";
@@ -234,20 +244,20 @@
 		}
 	</script>
 </head>
-<body style="background-color: #fff8e1;">
+<body style="background-color: #f5f5f5;">
 
 	<div class="col-md-offset-2 col-md-8" style="margin-top: 20px;">
 		<div style="padding-bottom: 7px;">
-			<div class="brianeddow shake">
-			<span style="font-weight: bold;">B R I A N
+			<div class="brianeddow shake whiteout">
+			<span style="font-weight: bold; padding-left: 5px;">B R I A N
 				<span style="padding-left: 14px; padding-right: 14px;">E D D O W</span>
 			</span>
 			</div>
 
 			<span style="text-align: right; width: 100%; margin-left: 10px;">
-				<a href="#/home" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">Home</a>
-				<a href="#/about" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">About</a>
-				<a href="#/work" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">Work</a>
+				<a href="#/home" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">Home</a>/
+				<a href="#/about" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">About</a>/
+				<a href="#/work" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">Work</a>/
 				<a href="#/skills" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">Skills</a>
 				<!-- <a href="#/carousel" onmouseover="move(this)" onmouseout="reset(this)" style="padding-right: 5px;">Carousel</a> -->
 			</span>
