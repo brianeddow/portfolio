@@ -1,6 +1,6 @@
 {
-  "name": "QuotingDojo",
-  "description": "QuotingDojo application to keep track of all the profound ninjas",
+  "name": "Portfolio",
+  "description": "A simple display of my coding",
   "dependencies": {
     "body-parser": "^1.13.1",
     "ejs": "1.0.0",
